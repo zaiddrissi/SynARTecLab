@@ -168,6 +168,8 @@
     .client-link{fill:none;stroke:#00f6ac;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:8 11;opacity:.48;animation:networkDash 12s linear infinite}
     @keyframes networkDash{to{stroke-dashoffset:-190}}
     .client-hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:210px;height:210px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:26px;z-index:3;background:radial-gradient(circle,rgba(0,246,172,.20),rgba(0,246,172,.07) 52%,rgba(255,255,255,.74) 76%);border:1px solid rgba(0,246,172,.36);box-shadow:0 0 0 20px rgba(0,246,172,.05),0 0 60px rgba(0,246,172,.12)}
+    .client-hub > div{display:grid;justify-items:center;align-content:center}
+    .client-hub-logo{width:54px;height:54px;object-fit:contain;margin-bottom:12px;filter:drop-shadow(0 8px 18px rgba(0,246,172,.18))}
     .client-hub strong{display:block;font:600 1.35rem/1.05 "Manrope",sans-serif;letter-spacing:-.04em;color:#13201b}
     .client-hub span{display:block;margin-top:10px;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:#64726d}
     .client-node{position:absolute;z-index:3;width:235px;text-align:center;animation:nodeFloat 5.6s ease-in-out infinite}
@@ -180,12 +182,10 @@
     .cn3 .client-blob{border-radius:61% 39% 44% 56% / 48% 58% 42% 52%}
     .cn4 .client-blob{border-radius:45% 55% 62% 38% / 56% 44% 60% 40%}
     .client-node:hover .client-blob{transform:scale(1.035);box-shadow:0 24px 46px rgba(0,0,0,.09),0 0 0 11px rgba(0,246,172,.07)}
-    .client-blob img{max-width:165px;max-height:62px;object-fit:contain}
+    .client-blob img{max-width:165px;max-height:100px;object-fit:contain}
     .client-node small{display:block;color:#74817c;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
     .client-node h3{font:700 1rem/1.15 "Inter",sans-serif;margin-bottom:6px;color:#202825}
     .client-node p{margin:0 auto;color:#5a6662;font-size:.86rem;line-height:1.55;max-width:210px}
-    .client-node-dot{position:absolute;width:14px;height:14px;border-radius:50%;background:#00f6ac;box-shadow:0 0 0 8px rgba(0,246,172,.11),0 0 22px rgba(0,246,172,.25);z-index:4}
-    .dot1{left:28%;top:31%}.dot2{right:28%;top:31%}.dot3{left:31%;bottom:29%}.dot4{right:31%;bottom:29%}
     .clients-note{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-top:24px;color:#64716d;font-size:.73rem;letter-spacing:.12em;text-transform:uppercase}
 
     /* selected work */
@@ -284,7 +284,7 @@
     @media (max-width:620px){
       .intro-visual-caption{left:14px;bottom:12px;font-size:.56rem}.intro-visual::after{left:14px;top:14px}
       .client-network{min-height:auto;padding:24px 0;display:grid;gap:22px}
-      .client-network svg,.client-hub,.client-node-dot{display:none}
+      .client-network svg,.client-hub{display:none}
       .client-node{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:100%;animation:none;display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;text-align:left}
       .client-blob{width:150px;height:98px;margin:0;border-radius:54% 46% 58% 42% / 47% 57% 43% 53%!important}
       .client-node p{margin:0;max-width:none}.client-node small{margin-bottom:4px}
@@ -305,6 +305,50 @@
     @media(max-width:1100px){.project-copy{min-height:38vh}.poster-visual{min-height:54vh}}
     @media(max-width:760px){.project-copy{min-height:350px}.poster-visual{min-height:clamp(260px,60vw,490px)}}
     @media(max-width:620px){.project-copy{min-height:auto;gap:54px}.poster-visual{min-height:clamp(230px,55vw,365px)}.poster-visual .project-facts{font-size:.53rem}}
+
+
+    /* Expedition: preserve the animated desktop route, reflow it into a
+       spacious progressive vertical timeline on narrow screens. */
+    .mobile-route-track{display:contents}
+    @media (max-width:760px){
+      .journey{height:auto;padding:82px 0 88px;background:#080e0b}
+      .journey-sticky{position:relative;height:auto;overflow:visible}
+      .journey-head{max-width:none}
+      .journey-head h2{font-size:clamp(2.65rem,11.4vw,4.25rem);line-height:1.02;letter-spacing:-.055em}
+      .journey-meta{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:18px;margin-top:22px;border-top:1px solid rgba(255,255,255,.13)}
+      .journey-meta span{margin:0;font-size:.57rem;letter-spacing:.11em;line-height:1.6}
+      .journey-meta strong{font-size:clamp(.78rem,3.2vw,.96rem);line-height:1.4;text-align:right}
+      .route-stage{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:var(--container);height:auto;min-height:0;margin:30px auto 0;padding:26px 16px 22px;border:1px solid rgba(0,246,172,.18);border-radius:22px;overflow:hidden;background:radial-gradient(ellipse at 15% 15%,rgba(0,246,172,.10),transparent 55%),linear-gradient(155deg,#0e1a14,#080e0b);box-shadow:0 26px 70px rgba(0,0,0,.20)}
+      .route-grid{background-size:44px 44px;opacity:.52;pointer-events:none}
+      .route-svg,.route-packet{display:none}
+      .mobile-route-track{position:relative;z-index:2;display:grid;gap:14px}
+      .mobile-route-track::before,.mobile-route-track::after{content:"";position:absolute;left:11px;top:44px;height:calc(100% - 88px);width:2px;border-radius:4px;pointer-events:none}
+      .mobile-route-track::before{background:rgba(255,255,255,.18)}
+      .mobile-route-track::after{background:linear-gradient(180deg,#00f6ac,#89ffda);box-shadow:0 0 13px rgba(0,246,172,.55);transform:scaleY(var(--mobileRouteProgress,0));transform-origin:center top;will-change:transform}
+      .route-stop{position:relative;left:auto;right:auto;top:auto;bottom:auto;display:grid;grid-template-columns:24px minmax(0,1fr);gap:14px;align-items:center;min-width:0;opacity:.53;transform:translateY(8px);transition:opacity .38s ease,transform .38s ease}
+      .route-stop.active{opacity:1;transform:translateY(0)}
+      .route-stop .dot{position:relative;z-index:3;width:14px;height:14px;justify-self:center;border:2px solid #627970;background:#101b16}
+      .route-stop.active .dot{background:var(--green);border-color:var(--green2);box-shadow:0 0 0 6px rgba(0,246,172,.12),0 0 19px rgba(0,246,172,.42)}
+      .route-stop .label{position:relative;left:auto;right:auto;top:auto;bottom:auto;min-width:0;width:100%;padding:19px 17px 18px;text-align:left;border:1px solid rgba(255,255,255,.11);border-radius:15px;background:rgba(8,18,13,.83);transition:border-color .38s ease,background .38s ease,box-shadow .38s ease}
+      .route-stop.active .label{border-color:rgba(0,246,172,.42);background:linear-gradient(125deg,rgba(0,246,172,.10),rgba(8,18,13,.95) 62%);box-shadow:0 12px 30px rgba(0,0,0,.14)}
+      .route-stop .label small{font-size:.61rem;letter-spacing:.15em;margin-bottom:7px}
+      .route-stop .label strong{display:block;font-size:clamp(1rem,4.1vw,1.24rem);line-height:1.22;overflow-wrap:anywhere}
+      .route-stop .label span{margin-top:7px;font-size:.77rem;line-height:1.4;overflow-wrap:anywhere}
+      .route-stats{position:relative;z-index:2;left:auto;bottom:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:0;margin-top:26px;padding:21px 0 0;border-top:1px solid rgba(255,255,255,.13)}
+      .route-stat{min-width:0;padding:0 5px;text-align:center}
+      .route-stat+.route-stat{border-left:1px solid rgba(255,255,255,.13)}
+      .route-stat small{font-size:.54rem;letter-spacing:.09em;margin-bottom:8px}
+      .route-stat strong{display:block;font-size:clamp(.81rem,3.25vw,1.2rem);line-height:1.25;overflow-wrap:anywhere}
+    }
+    @media (max-width:360px){
+      .route-stage{padding:22px 11px 20px}
+      .route-stop{gap:10px}
+      .route-stop .label{padding:16px 13px}
+      .journey-meta{gap:8px}
+    }
+    @media (prefers-reduced-motion:reduce){
+      .mobile-route-track::after,.route-stop,.route-stop .label{transition:none!important}
+    }
 
 </style>
 </head>
@@ -409,11 +453,13 @@
 <path class="route-live" d="M90,440 C190,435 195,290 300,286 C390,282 405,395 500,370 C585,348 590,230 690,220 C780,210 790,140 900,125" id="routeLive" pathlength="1"></path>
 </svg>
 <div class="route-packet" id="routePacket"></div>
+<div class="mobile-route-track" aria-label="The five stages of our digital expedition">
 <div class="route-stop rs1" data-threshold="0.02"><span class="dot"></span><div class="label"><small>Start</small><strong>Discover</strong><span>Audit &amp; vision</span></div></div>
 <div class="route-stop rs2" data-threshold="0.22"><span class="dot"></span><div class="label"><small>Systems</small><strong>Infrastructure</strong><span>Network &amp; security</span></div></div>
 <div class="route-stop rs3" data-threshold="0.45"><span class="dot"></span><div class="label"><small>Build</small><strong>Applications</strong><span>ERP · Web · Mobile</span></div></div>
 <div class="route-stop rs4" data-threshold="0.68"><span class="dot"></span><div class="label"><small>Intelligence</small><strong>Data</strong><span>BI · Analytics</span></div></div>
 <div class="route-stop rs5" data-threshold="0.88"><span class="dot"></span><div class="label"><small>Destination</small><strong>Scale</strong><span>Brand · Growth · Automation</span></div></div>
+</div>
 <div class="route-stats">
 <div class="route-stat"><small>Approach</small><strong>360°</strong></div>
 <div class="route-stat"><small>Focus</small><strong>Business</strong></div>
@@ -440,8 +486,7 @@
 <circle cx="500" cy="300" fill="none" r="92" stroke="rgba(0,246,172,.12)" stroke-width="1"></circle>
 <circle cx="500" cy="300" fill="none" r="128" stroke="rgba(0,246,172,.08)" stroke-dasharray="6 12" stroke-width="1"></circle>
 </svg>
-<div class="client-hub"><div><strong>SynARTec Network</strong><span>4 univers · 1 vision</span></div></div>
-<span class="client-node-dot dot1"></span><span class="client-node-dot dot2"></span><span class="client-node-dot dot3"></span><span class="client-node-dot dot4"></span>
+<div class="client-hub"><div><img alt="SynARTec" class="client-hub-logo" src="synarteclab_pic/logo_synarteclab_icone.png"/><strong>SynARTec Network</strong><span>4 univers · 1 vision</span></div></div>
 <article class="client-node cn1">
 <div class="client-blob"><img alt="Bedafis" src="logo_clients/logo_bedafis.png"/></div>
 <small>Construction</small><h3>Bedafis</h3><p>Matériaux et solutions pour la construction.</p>
@@ -542,7 +587,7 @@
 <p>Expliquez-nous ce que vous voulez transformer. Nous vous aidons à donner une forme claire, forte et utile à votre projet.</p>
 <a class="contact-link" href="https://wa.me/212620451447" rel="noopener" target="_blank">WhatsApp <span>↗</span></a>
 <a class="contact-link" href="https://instagram.com/synartec_lab" rel="noopener" target="_blank">Instagram / @synartec_lab <span>↗</span></a>
-<a class="contact-link" href="mailto:contact@synarteclab.ma">contact@synarteclab.ma <span>↗</span></a>
+<a class="contact-link" href="mailto:contact@synarteclab.com">contact@synarteclab.com <span>↗</span></a>
 <a class="contact-link" href="tel:+212620451447">+212 6 20 45 14 47 <span>↗</span></a>
 </div>
 </div>
@@ -637,7 +682,19 @@
         routePacket.style.left=x+'px';
         routePacket.style.top=yy+'px';
       } else {
-        routeStops.forEach(s=>s.classList.add('active'));
+        // Mobile expedition: reveal each card when it reaches the viewport,
+        // and fill the vertical route as the visitor continues scrolling.
+        const focusY=y+window.innerHeight*.77;
+        const first=routeStops[0];
+        const last=routeStops[routeStops.length-1];
+        const firstY=first.getBoundingClientRect().top+y+first.offsetHeight/2;
+        const lastY=last.getBoundingClientRect().top+y+last.offsetHeight/2;
+        const mobileProgress=clamp((focusY-firstY)/Math.max(lastY-firstY,1),0,1);
+        routeStage.style.setProperty('--mobileRouteProgress',mobileProgress.toFixed(4));
+        routeStops.forEach(s=>{
+          const nodeY=s.getBoundingClientRect().top+y+s.offsetHeight/2;
+          s.classList.toggle('active',focusY>=nodeY);
+        });
       }
     }
 
@@ -659,8 +716,7 @@
       const hub=network.querySelector('.client-hub');
       const blobs=[...network.querySelectorAll('.client-node .client-blob')];
       const paths=[...svg.querySelectorAll('path.client-link')];
-      const dots=[...network.querySelectorAll('.client-node-dot')];
-      if(blobs.length!==paths.length || blobs.length!==dots.length || !hub) return;
+      if(blobs.length!==paths.length || !hub) return;
       const box=network.getBoundingClientRect();
       if(!box.width || !box.height) return;
       const center=(rect)=>({x:rect.left-box.left+rect.width/2,y:rect.top-box.top+rect.height/2});
@@ -679,15 +735,6 @@
         const p1={x:a.x+dx*.43,y:a.y+dy*.14};
         const p2={x:a.x+dx*.62,y:a.y+dy*.87};
         paths[i].setAttribute('d',`M${a.x.toFixed(2)} ${a.y.toFixed(2)} C${p1.x.toFixed(2)} ${p1.y.toFixed(2)} ${p2.x.toFixed(2)} ${p2.y.toFixed(2)} ${b.x.toFixed(2)} ${b.y.toFixed(2)}`);
-        // Dot at the inner border of the logo frame (line visually meets the frame).
-        const vx=from.x-to.x,vy=from.y-to.y;
-        const tx=Math.abs(vx)>1?(rect.width/2)/Math.abs(vx):Infinity;
-        const ty=Math.abs(vy)>1?(rect.height/2)/Math.abs(vy):Infinity;
-        const t=Math.min(tx,ty)*.98;
-        const dot={x:to.x+vx*t,y:to.y+vy*t};
-        dots[i].style.left=(dot.x-7)+'px';
-        dots[i].style.top=(dot.y-7)+'px';
-        dots[i].style.right='auto';dots[i].style.bottom='auto';
       });
     }
     window.addEventListener('resize',alignClientNetwork,{passive:true});
