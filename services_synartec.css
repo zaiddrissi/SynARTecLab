@@ -1,0 +1,203 @@
+/* SynARTec Lab | Services addition: Marketing Digital, Data Analytics & IT Infrastructure.
+   Scoped to the new section. Uses the official brand green #00f6ac. */
+.service-studio{position:relative;isolation:isolate;overflow:hidden;padding:130px 0 110px;background:radial-gradient(ellipse 52% 52% at 101% 8%,rgba(0,246,172,.11),transparent 75%),radial-gradient(ellipse 36% 65% at -15% 89%,rgba(0,246,172,.08),transparent 80%),#07171c;scroll-margin-top:92px}
+.service-studio::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(180,247,222,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(180,247,222,.035) 1px,transparent 1px);background-size:85px 85px;mask-image:linear-gradient(180deg,transparent 0%,black 15%,black 85%,transparent)}
+.service-studio-head{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.65fr);gap:60px;align-items:end;margin-bottom:48px}
+.service-studio-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.7rem;font-weight:750;letter-spacing:.17em;color:var(--green,#00f6ac);margin-bottom:27px}
+.service-studio-led{display:block;width:8px;height:8px;border-radius:50%;background:#00f6ac;box-shadow:0 0 0 5px rgba(0,246,172,.12),0 0 22px rgba(0,246,172,.35)}
+.service-studio-head h2{font:650 clamp(2.6rem,4.5vw,5.2rem)/1.07 "Manrope",sans-serif;letter-spacing:-.065em;color:#f3fff9;max-width:980px}
+.service-studio-head h2 em{font-style:normal;color:#00f6ac}
+.service-studio-head>p{font-size:clamp(.9rem,1.12vw,1.02rem);line-height:1.85;color:#a9c4b9;max-width:395px;padding-bottom:7px}
+.service-studio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:16px}
+.service-panel{min-width:0;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:26px 26px 25px;min-height:633px;border-radius:25px;border:1px solid rgba(14,80,65,.1);box-shadow:0 17px 65px rgba(0,0,0,.12);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.service-panel:hover{transform:translateY(-7px);box-shadow:0 27px 75px rgba(0,0,0,.19)}
+.service-panel-marketing{background:#f1f8f4;color:#122922}
+.service-panel-data{background:linear-gradient(145deg,#0c3033 0%,#092327 65%,#091b20 100%);color:#f0fff9;border-color:rgba(0,246,172,.29)}
+.service-panel-infra{background:#dff2e9;color:#112e25}
+.service-panel-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;font-size:.62rem;letter-spacing:.13em;font-weight:800;color:#507568}
+.service-panel-data .service-panel-top{color:#9bcaba}
+.service-panel-top-icon{flex:0 0 43px;display:grid;place-items:center;width:43px;height:43px;border-radius:13px;background:rgba(10,89,66,.075);color:#147b5a;font-size:1.05rem}
+.service-panel-data .service-panel-top-icon{color:#00f6ac;background:rgba(0,246,172,.095);border:1px solid rgba(0,246,172,.15)}
+.service-visual{position:relative;isolation:isolate;flex:none;overflow:hidden;height:230px;border-radius:17px;margin:20px 0 27px}
+/* Marketing: visual network of brand, content, social, campaigns. */
+.service-visual-marketing{background:radial-gradient(circle at 51% 54%,rgba(0,246,172,.23),transparent 35%),linear-gradient(135deg,#dceee4,#e8f4ec)}
+.service-visual-marketing::before{content:"";position:absolute;inset:0;background-image:radial-gradient(#4f9b7d 1px,transparent 1px);background-size:18px 18px;opacity:.16}
+.service-visual-orbit{position:absolute;left:50%;top:49%;border:1px dashed rgba(17,126,89,.27);border-radius:50%;transform:translate(-50%,-50%)}
+.service-visual-orbit-one{width:195px;height:195px}.service-visual-orbit-two{width:275px;height:275px}
+.marketing-center{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:106px;height:106px;border-radius:24px;background:#0b332d;color:#00f6ac;box-shadow:0 13px 30px rgba(0,61,42,.27);font-size:.64rem;font-weight:850;letter-spacing:.09em}
+.marketing-center-mark{font-size:2rem;color:#00f6ac}
+.marketing-signal{position:absolute;z-index:2;left:15px;top:12px;display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:9px;background:#fff;border:1px solid rgba(15,120,83,.13);font-size:.55rem;font-weight:800;letter-spacing:.06em;color:#1d6c52;box-shadow:0 5px 20px rgba(20,65,49,.09)}
+.marketing-signal i{font-size:.82rem}
+.marketing-channel{position:absolute;z-index:2;display:flex;align-items:center;gap:8px;padding:9px 11px;border-radius:10px;background:rgba(255,255,255,.94);color:#123f31;border:1px solid rgba(6,101,71,.12);box-shadow:0 5px 17px rgba(12,83,58,.13);font-size:.61rem;font-weight:750}
+.marketing-channel i{font-size:.88rem;color:#0e9768}.channel-a{top:61px;left:16px}.channel-b{top:54px;right:16px}.channel-c{bottom:14px;right:31px}
+/* Analytics: dashboard preview with neutral schematic values, no fabricated statistics. */
+.service-visual-data{background:linear-gradient(155deg,rgba(0,246,172,.12),rgba(2,25,27,.5) 66%),#061f24;border:1px solid rgba(0,246,172,.19);padding:15px 17px;color:#e9fcf6}
+.data-head{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.54rem;font-weight:800;letter-spacing:.13em;color:#a1d5c2}
+.data-head span{display:flex;gap:8px;align-items:center}.data-head i.fa-circle{font-size:.33rem;color:#00f6ac}.data-kpi-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:13px}
+.data-kpi-row>div{min-width:0;background:rgba(209,255,238,.05);border:1px solid rgba(147,243,209,.12);padding:9px;border-radius:8px;display:flex;flex-direction:column;gap:5px}
+.data-kpi-row small{font-size:.45rem;letter-spacing:.08em;color:#8bb8a8;white-space:nowrap}.data-kpi-row strong{font:700 .94rem "Manrope",sans-serif;color:#00f6ac}
+.data-chart{height:88px;position:relative;margin-top:13px;border-bottom:1px solid rgba(163,224,201,.12);background:repeating-linear-gradient(to bottom,transparent,transparent 22px,rgba(255,255,255,.06) 23px)}
+.chart-bars{position:absolute;inset:8px 7px 0;display:flex;gap:9px;align-items:flex-end;justify-content:space-around}
+.chart-bars i{display:block;flex:1;max-width:18px;height:30%;background:linear-gradient(180deg,#00f6ac,rgba(0,246,172,.12));border-radius:3px 3px 0 0;opacity:.8}.chart-bars i:nth-child(2){height:49%}.chart-bars i:nth-child(3){height:33%}.chart-bars i:nth-child(4){height:65%}.chart-bars i:nth-child(5){height:52%}.chart-bars i:nth-child(6){height:76%}.chart-bars i:nth-child(7){height:56%}.chart-bars i:nth-child(8){height:85%}.chart-bars i:nth-child(9){height:69%}
+.data-chart-footer{display:flex;align-items:center;justify-content:space-between;gap:5px;margin-top:8px;font-size:.48rem;letter-spacing:.08em;color:#8cbfac}.data-chart-footer span{display:flex;gap:5px;align-items:center}.data-chart-footer i{background:#00f6ac;border-radius:50%;width:5px;height:5px}
+/* Infrastructure: connected network, hardware and backups. */
+.service-visual-infra{background:radial-gradient(circle at 50% 35%,rgba(0,246,172,.25),transparent 45%),#cde9d9;border:1px solid rgba(21,113,79,.13)}
+.infra-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(16,124,89,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(16,124,89,.07) 1px,transparent 1px);background-size:22px 22px}
+.infra-line{position:absolute;z-index:1;background:#3d9774;box-shadow:0 0 6px rgba(0,246,172,.3)}.infra-line-l{height:1px;width:30%;left:20%;top:51%}.infra-line-r{height:1px;width:30%;right:19%;top:51%}.infra-line-down{width:1px;height:30%;left:50%;top:50%}
+.infra-node{position:absolute;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:82px;height:76px;border-radius:15px;background:#f4fff7;border:1px solid rgba(21,102,77,.17);color:#0a7150;box-shadow:0 10px 22px rgba(15,82,58,.13)}
+.infra-node i{font-size:1.24rem}.infra-node span{font-size:.51rem;letter-spacing:.07em;font-weight:800}.infra-main{top:31%;left:50%;width:100px;height:94px;transform:translateX(-50%);background:#082f2b;color:#00f6ac;border-color:rgba(0,246,172,.35);box-shadow:0 10px 22px rgba(10,55,41,.24)}
+.infra-server{left:5%;top:32%}.infra-wifi{right:5%;top:32%}.infra-backup{left:50%;bottom:4%;transform:translateX(-50%);width:88px;height:54px;flex-direction:row;gap:7px}.infra-backup i{font-size:1rem}
+.infra-status{position:absolute;left:13px;top:11px;display:flex;align-items:center;gap:6px;color:#1b7655;font-size:.53rem;font-weight:800;letter-spacing:.07em}.infra-status i{width:6px;height:6px;border-radius:50%;background:#02ae76}
+/* Shared service copy */
+.service-panel-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start}
+.service-panel-category{font-size:.59rem;font-weight:850;letter-spacing:.15em;color:#098861;margin:0 0 12px}
+.service-panel-data .service-panel-category{color:#00f6ac}
+.service-panel h3{font:720 clamp(2rem,2.5vw,2.75rem)/1.11 "Manrope",sans-serif;letter-spacing:-.06em;margin:0 0 14px}
+.service-panel h3 em{font-style:normal;color:#078b64}.service-panel-data h3 em{color:#00f6ac}
+.service-panel-copy>p:not(.service-panel-category){font-size:.84rem;line-height:1.77;color:#536f62;max-width:390px}
+.service-panel-data .service-panel-copy>p:not(.service-panel-category){color:#a5cec0}
+.service-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px;margin-bottom:25px}
+.service-tags span{border:1px solid rgba(11,101,71,.18);border-radius:40px;padding:8px 10px;font-size:.62rem;font-weight:700;color:#326e59;background:rgba(255,255,255,.38);white-space:nowrap}
+.service-panel-data .service-tags span{background:rgba(0,246,172,.065);border-color:rgba(0,246,172,.2);color:#b4eada}
+.service-panel-link{width:100%;margin-top:auto;padding-top:17px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid rgba(13,85,61,.18);font-weight:750;font-size:.77rem;color:#0c6a4d;transition:color .2s ease}
+.service-panel-link span{font-size:1.1rem;transition:transform .2s ease}.service-panel-link:hover{color:#00996b}.service-panel-link:hover span{transform:translate(3px,-3px)}
+.service-panel-data .service-panel-link{border-color:rgba(0,246,172,.25);color:#00f6ac}
+.service-studio-outro{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:22px;padding:26px 32px;border:1px solid rgba(143,236,206,.17);border-radius:19px;background:rgba(0,246,172,.035);color:#bedbd0;font-size:.81rem}
+.service-studio-outro>span{display:flex;align-items:center;gap:13px}.service-studio-outro i{color:#00f6ac;font-size:1rem}
+.service-studio-outro a{display:flex;align-items:center;gap:16px;color:#00f6ac;font-weight:750;white-space:nowrap}.service-studio-outro a:hover{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:1130px){.service-studio-head{gap:35px}.service-studio-grid{gap:12px}.service-panel{padding:20px;min-height:650px}.service-panel-top{font-size:.55rem;letter-spacing:.09em}.service-visual{margin:18px 0 23px}.service-panel h3{font-size:clamp(1.8rem,2.9vw,2.5rem)}.service-tags span{font-size:.55rem}}
+@media(max-width:950px){.service-studio{padding:98px 0 90px}.service-studio-head{grid-template-columns:1fr;gap:19px}.service-studio-head>p{max-width:610px}.service-studio-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.service-panel{padding:25px;min-height:615px}.service-panel-infra{grid-column:1/-1;min-height:unset;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 24px}.service-panel-infra .service-panel-top{grid-column:1/-1}.service-panel-infra .service-visual{min-height:230px;margin:16px 0 0}.service-panel-infra .service-panel-copy{padding:18px 0 0}.service-panel h3{font-size:2.3rem}.service-tags span{font-size:.63rem}}
+@media(max-width:680px){.service-studio{padding:77px 0 72px}.service-studio-head{margin-bottom:30px}.service-studio-head h2{font-size:clamp(2.2rem,9vw,3.5rem);line-height:1.12}.service-studio-head>p{font-size:.88rem;line-height:1.72}.service-studio-eyebrow{font-size:.56rem;margin-bottom:18px}.service-studio-grid{grid-template-columns:1fr;gap:15px}.service-panel,.service-panel-infra{display:flex;grid-column:auto;min-height:unset;padding:22px;border-radius:20px}.service-panel-top{font-size:.62rem}.service-visual{height:225px;margin:18px 0 23px}.service-panel-infra .service-visual{margin:18px 0 23px;min-height:unset}.service-panel-infra .service-panel-copy{padding:0}.service-panel h3{font-size:clamp(2.05rem,8.1vw,2.7rem)}.service-panel-copy>p:not(.service-panel-category){font-size:.84rem}.service-tags{margin:18px 0 27px}.service-panel-link{padding-top:18px;font-size:.76rem}.service-studio-outro{align-items:flex-start;flex-direction:column;gap:17px;padding:22px;font-size:.77rem}.service-studio-outro>span{line-height:1.55}.service-studio-outro a{white-space:normal}}
+@media(max-width:370px){.service-panel{padding:17px}.service-visual{height:210px}.marketing-channel{font-size:.54rem;padding:8px}.marketing-signal{font-size:.48rem}.marketing-center{width:92px;height:92px}.infra-node{width:72px;height:68px}.infra-main{width:88px;height:84px}.infra-server{left:3%}.infra-wifi{right:3%}.data-head{font-size:.48rem}}
+@media(prefers-reduced-motion:reduce){.service-panel,.service-panel-link span{transition:none!important}.service-panel:hover{transform:none}}
+
+/* All service visuals are self-contained, no icon-font download required. */
+.service-panel-top-icon svg{display:block;width:22px;height:22px}
+.marketing-center-mark svg{display:block;width:39px;height:39px}
+.marketing-signal .service-mini-glyph{font-size:1rem;line-height:1}
+.marketing-channel .service-mini-glyph{color:#0e9768;font-size:1.05rem;line-height:1.1;font-weight:850}
+.service-data-dot{display:inline-block;flex:none;width:5px;height:5px;border-radius:50%;background:#00f6ac}
+.infra-node svg{display:block;width:25px;height:25px}
+.infra-backup svg{width:21px;height:21px}
+.service-studio-outro .service-mini-glyph{font-size:1.1rem;color:#00f6ac}
+
+
+/* === SynARTec Lab · four-service studio refinements · October 2026 === */
+/* Four equal cards, all in one desktop row. */
+.service-studio .service-studio-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.service-studio .service-panel{min-width:0;min-height:692px;padding:20px 19px 23px;border-radius:23px}
+.service-studio .service-panel-top{font-size:.53rem;letter-spacing:.095em;min-height:40px;gap:6px}
+.service-studio .service-panel-top-icon{flex:0 0 40px;width:40px;height:40px}
+.service-studio .service-visual{height:216px;margin:18px 0 25px;border-radius:15px}
+.service-studio .service-panel h3{font-size:clamp(1.75rem,2.05vw,2.42rem);letter-spacing:-.055em;margin-bottom:14px}
+.service-studio .service-panel-copy>p:not(.service-panel-category){font-size:.80rem;line-height:1.7}
+.service-studio .service-tags{margin-top:17px;margin-bottom:22px;gap:6px}
+.service-studio .service-tags span{white-space:normal;padding:7px 9px;font-size:.57rem}
+.service-studio .service-panel-category{font-size:.55rem;letter-spacing:.10em;margin-bottom:13px}
+.service-studio .service-panel-link{font-size:.71rem}
+/* Bespoke icons for marketing: single consistent stroke and readable labels. */
+.service-visual-marketing{background:radial-gradient(circle at 49% 47%,rgba(0,246,172,.25),transparent 37%),linear-gradient(135deg,#dcefe5,#e7f4ec)}
+.service-visual-marketing .service-visual-orbit-one{width:170px;height:170px}
+.service-visual-marketing .service-visual-orbit-two{width:255px;height:255px}
+.service-visual-marketing .marketing-signal{left:11px;top:10px;padding:6px 9px;gap:6px;font-size:.46rem}
+.service-visual-marketing .service-mini-glyph{width:23px;height:23px;flex:none;display:inline-flex;justify-content:center;align-items:center;color:#088f66}
+.service-visual-marketing .service-mini-glyph svg{display:block;width:19px;height:19px}
+.service-visual-marketing .marketing-center{width:72px;height:72px;gap:2px;border-radius:20px;font-size:.46rem}
+.service-visual-marketing .marketing-center-mark svg{width:31px;height:31px}
+.service-visual-marketing .marketing-channel{gap:5px;min-height:32px;padding:5px 7px;border-radius:10px;font-size:.57rem}
+.service-visual-marketing .marketing-channel .service-mini-glyph{width:20px;height:20px}
+.service-visual-marketing .marketing-channel .service-mini-glyph svg{width:19px;height:19px}
+.service-visual-marketing .channel-a{left:7px;top:76px}
+.service-visual-marketing .channel-b{right:7px;top:76px}
+.service-visual-marketing .channel-c{right:auto;left:50%;bottom:11px;transform:translateX(-50%)}
+/* Balanced network diagram: visibly separate central hub and lower backup. */
+.service-visual-infra .infra-main{top:25%;height:79px;width:84px;left:50%;transform:translateX(-50%);gap:5px}
+.service-visual-infra .infra-main svg{height:23px;width:23px}
+.service-visual-infra .infra-server,.service-visual-infra .infra-wifi{top:30%;width:65px;height:68px;gap:5px}
+.service-visual-infra .infra-server{left:6px}
+.service-visual-infra .infra-wifi{right:6px}
+.service-visual-infra .infra-node span{font-size:.46rem}
+.service-visual-infra .infra-line-l,.service-visual-infra .infra-line-r{top:48%;width:31%}
+.service-visual-infra .infra-line-down{top:62%;height:21%}
+.service-visual-infra .infra-backup{bottom:7%;width:89px;height:45px;gap:6px}
+.service-visual-infra .infra-backup svg{width:18px;height:18px}
+.service-visual-infra .infra-status{top:10px;left:10px;font-size:.46rem}
+/* ERP illustration: no external icon dependency or fictitious analytics metrics. */
+.service-panel-erp{background:linear-gradient(154deg,#102d35 0%,#08222a 65%,#071922 100%);color:#f3fff8;border-color:rgba(0,246,172,.24)!important}
+.service-panel-erp .service-panel-top{color:#b1d8cb}
+.service-panel-erp .service-panel-top-icon{color:#00f6ac;background:rgba(0,246,172,.095);border:1px solid rgba(0,246,172,.17)}
+.service-panel-erp .service-panel-category{color:#00f6ac}
+.service-panel-erp .service-panel-copy>p:not(.service-panel-category){color:#adcec2}
+.service-panel-erp h3 em{color:#00f6ac}
+.service-panel-erp .service-tags span{color:#bce7d6;background:rgba(0,246,172,.065);border-color:rgba(0,246,172,.2)}
+.service-panel-erp .service-panel-link{color:#00f6ac;border-color:rgba(0,246,172,.2)}
+.service-visual-erp{background:radial-gradient(circle at 50% 30%,rgba(0,246,172,.15),transparent 57%),linear-gradient(145deg,#0c3e43,#091d26);border:1px solid rgba(0,246,172,.2);display:flex;align-items:center;justify-content:center;padding:12px;isolation:isolate}
+.erp-glow{position:absolute;width:130px;height:110px;top:55px;left:27%;background:rgba(0,246,172,.25);filter:blur(40px);border-radius:100%;z-index:-1}
+.erp-dashboard{height:160px;width:100%;display:grid;grid-template-columns:34px minmax(0,1fr);overflow:hidden;border:1px solid rgba(143,241,210,.3);background:#0a1c24;border-radius:10px;box-shadow:0 18px 25px rgba(0,0,0,.26);transform:rotate(-2deg)}
+.erp-sidebar{display:flex;align-items:center;flex-direction:column;gap:11px;padding-top:9px;background:#09292e;border-right:1px solid rgba(0,246,172,.13)}
+.erp-sidebar-logo{display:grid;place-items:center;width:20px;height:20px;border-radius:6px;background:#00f6ac;color:#092522;font:bold 13px Manrope,sans-serif;position:relative}
+.erp-sidebar-logo span{font-size:7px;position:absolute;right:1px;top:1px}
+.erp-sidebar i{display:block;width:12px;height:4px;border-radius:3px;background:#37645d}.erp-sidebar .erp-side-active{background:#00f6ac}
+.erp-workspace{padding:11px 11px 8px;min-width:0}
+.erp-appbar{display:flex;justify-content:space-between;color:#a4d8c6;letter-spacing:.06em;font-size:.43rem;font-weight:700}
+.erp-appbar b{color:#00f6ac}.erp-live-dot{width:5px;height:5px;border-radius:50%;background:#00f6ac}
+.erp-caption{font:750 .61rem Manrope,sans-serif;letter-spacing:-.02em;color:#ebfff7;margin:10px 0 8px}
+.erp-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.erp-metrics div{min-width:0;display:flex;align-items:center;justify-content:space-between;gap:3px;background:#15383b;border:1px solid rgba(0,246,172,.10);border-radius:5px;padding:8px 5px}
+.erp-metrics small{font-size:.40rem;font-weight:750;color:#9dcfbe;letter-spacing:.05em}
+.erp-metrics strong{color:#00f6ac;font-size:.75rem;line-height:.5}
+.erp-analysis{margin-top:9px;padding:7px 8px 5px;border:1px solid rgba(0,246,172,.13);background:rgba(0,246,172,.035);border-radius:5px}
+.erp-analysis-label{font-size:.37rem;color:#b1dccc;display:flex;justify-content:space-between;letter-spacing:.05em}.erp-analysis-label span{color:#00f6ac;font-size:.35rem}
+.erp-analysis-bars{height:28px;display:flex;align-items:end;justify-content:space-between;gap:5px;margin-top:4px}
+.erp-analysis-bars i{flex:1;border-radius:2px 2px 0 0;background:linear-gradient(0deg,#0c7668,#00f6ac);height:31%;opacity:.88}.erp-analysis-bars i:nth-child(2){height:65%}.erp-analysis-bars i:nth-child(3){height:48%}.erp-analysis-bars i:nth-child(4){height:81%}.erp-analysis-bars i:nth-child(5){height:53%}.erp-analysis-bars i:nth-child(6){height:92%}.erp-analysis-bars i:nth-child(7){height:70%}.erp-analysis-bars i:nth-child(8){height:98%}
+.erp-module{position:absolute;z-index:2;display:inline-flex;align-items:center;gap:5px;padding:7px 9px;background:#eafff6;color:#0f5c45;font-size:.46rem;font-weight:850;letter-spacing:.04em;border-radius:6px;box-shadow:0 7px 25px rgba(0,0,0,.19)}
+.erp-module-dot{width:5px;height:5px;border-radius:50%;background:#00bb86}
+.erp-module-one{top:8px;right:9px}.erp-module-two{bottom:8px;left:8px}
+/* restore the original editorial navbar: transparent over landing video, glass after scroll */
+.nav-wrap{padding:18px 28px!important;transition:padding .35s ease!important}
+.nav-wrap .nav{display:grid!important;grid-template-columns:1fr auto 1fr!important;align-items:center!important;gap:18px!important;min-height:62px!important;padding:0 6px!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.30)!important;border-radius:0!important;background:transparent!important;backdrop-filter:none!important;box-shadow:none!important}
+.nav-wrap .brand-name{font-family:Orbitron,sans-serif!important;font-size:.94rem!important;letter-spacing:.02em!important}
+.nav-wrap .brand img{height:35px!important;width:35px!important}
+.nav-wrap .nav-center{gap:19px!important}
+.nav-wrap .nav-center a{padding:9px 3px!important;border-radius:0!important;font-size:.71rem!important;letter-spacing:.085em!important;text-transform:uppercase!important;color:#eef7f3!important;background:transparent!important}
+.nav-wrap .nav-center a:hover{color:#00f6ac!important}
+.nav-wrap .nav-right{justify-content:flex-end!important}
+.nav-wrap .enquire{background:transparent!important;color:#f5fff9!important;border:0!important;border-radius:0!important;padding:10px 0!important;font-size:.73rem!important;font-weight:650!important;letter-spacing:.13em!important;text-transform:uppercase!important;transition:color .2s ease!important}
+.nav-wrap .enquire::after{content:'↗';color:#00f6ac;margin-left:7px;display:inline-block;transition:transform .2s ease}
+.nav-wrap .enquire:hover{color:#00f6ac!important;filter:none!important;transform:none!important}
+.nav-wrap .enquire:hover::after{transform:translate(2px,-2px)}
+.nav-wrap.scrolled{padding:10px 28px!important}
+.nav-wrap.scrolled .nav{border:1px solid rgba(170,240,210,.18)!important;border-radius:17px!important;background:rgba(5,15,17,.87)!important;backdrop-filter:blur(20px)!important;box-shadow:0 14px 45px rgba(0,0,0,.22)!important;padding:0 17px!important}
+.mobile-menu .mobile-enquire{color:#00f6ac;font-weight:750;letter-spacing:.09em;text-transform:uppercase;display:flex;justify-content:space-between}
+/* tablet: deliberate two-by-two layout */
+@media(max-width:1150px){
+  .service-studio .service-studio-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .service-studio .service-panel{min-height:620px;padding:25px}
+  .service-studio .service-panel h3{font-size:clamp(2.0rem,3.1vw,2.7rem)}
+  .service-studio .service-panel-infra{display:flex;grid-column:auto;min-height:620px}
+  .service-studio .service-panel-infra .service-visual{margin:18px 0 25px;min-height:0}
+  .service-studio .service-panel-infra .service-panel-copy{padding:0}
+  .nav-wrap .nav{grid-template-columns:1fr auto!important}
+  .nav-wrap .nav-center{display:none!important}
+}
+/* phone: one card per row + properly spaced diagrams */
+@media(max-width:680px){
+  .service-studio .service-studio-grid{grid-template-columns:1fr;gap:16px}
+  .service-studio .service-panel,.service-studio .service-panel-infra{display:flex;min-height:0;padding:22px}
+  .service-studio .service-panel h3{font-size:clamp(2rem,8vw,2.6rem)}
+  .service-studio .service-visual{height:225px;margin:18px 0 22px}
+  .service-visual-infra .infra-server,.service-visual-infra .infra-wifi{width:76px;height:73px}
+  .service-visual-infra .infra-main{width:100px;height:85px}
+  .service-visual-infra .infra-node span{font-size:.51rem}
+  .service-visual-infra .infra-backup{bottom:7%;height:46px}
+  .nav-wrap,.nav-wrap.scrolled{padding:10px 13px!important}
+  .nav-wrap .nav{padding:0 7px!important;min-height:58px!important}
+  .nav-wrap.scrolled .nav{padding:0 12px!important}
+}
+@media(max-width:370px){
+  .service-visual-marketing .marketing-channel{padding:5px;font-size:.49rem}
+  .service-visual-marketing .marketing-center{width:68px;height:68px}
+  .service-visual-infra .infra-server,.service-visual-infra .infra-wifi{width:66px;height:67px}
+  .service-visual-infra .infra-main{width:88px;height:78px}
+  .service-panel-erp .erp-metrics small{font-size:.34rem}
+}
